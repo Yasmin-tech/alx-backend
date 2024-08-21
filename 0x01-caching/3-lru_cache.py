@@ -77,7 +77,8 @@ class LRUCache(BaseCaching):
                 self.cache_data[key] = value
                 curr_index = len(self.least_used_items)
                 self.least_used_items[curr_index] = key
-        print(self.least_used_items)
+
+        # print(self.least_used_items)
 
     def get(self, key: str) -> any:
         ''' Retrieve the associated value if the key is not none
