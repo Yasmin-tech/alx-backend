@@ -9,7 +9,7 @@ from base_caching import BaseCaching
 class LFUCache(BaseCaching):
     """Represents an object that allows storing and
     retrieving items from a dictionary with an LFU
-    removal mechanism when the limit is reached.
+    removal mechanism when the limit is reached
     """
     def __init__(self):
         """Initializes the cache.

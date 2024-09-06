@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 ''' a class LRUCache implementation that inherits from
-    BaseCaching and is a caching system
+    BaseCaching and is a caching system.
     '''
 
 from typing import Dict
