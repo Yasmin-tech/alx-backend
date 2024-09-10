@@ -34,7 +34,7 @@ def get_local() -> str:
 
 
 @app.route("/")
-def index():
+def index() -> str:
     """
         The base route
         """
