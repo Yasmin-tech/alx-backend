@@ -41,7 +41,7 @@ def index() -> str:
     home_title = gettext("Welcome to Holberton")
     home_header = gettext("Hello world")
     return render_template(
-            "2-index.html",
+            "3-index.html",
             home_title=home_title,
             home_header=home_header)
 
