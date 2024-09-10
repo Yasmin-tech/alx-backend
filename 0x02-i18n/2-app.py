@@ -25,7 +25,7 @@ babel = Babel(app)
 
 
 @babel.localeselector
-def get_local():
+def get_local() -> str:
     """
     Get the user local based on the request
 
