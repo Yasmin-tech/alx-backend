@@ -2,8 +2,8 @@
 """A Basic Flask app with internationalization support."""
 
 from flask_babel import Babel, gettext
-from flask import Flask, render_template, request, g
 from typing import Dict, Union
+from flask import Flask, render_template, request, g
 
 
 class Config:
