@@ -33,7 +33,7 @@ def get_locale() -> str:
     """Retrieves the locale for a web page."""
     supported_lang = app.config["LANGUAGES"]
     user_local = request.args.get("locale")
-    user_local = getattr(request, 'user_locale', None)
+    # user_local = getattr(request, 'user_locale', None)
     if user_local and user_local in supported_lang:
         return user_local
     return request.accept_languages.best_match(supported_lang)
@@ -58,8 +58,8 @@ def before_request() -> None:
         user is logged in
         """
     logged_user = get_user()
-    if logged_user:
-        request.user_locale = logged_user['locale']
+    # if logged_user:
+    #     request.user_locale = logged_user['locale']
     g.user = logged_user
 
 
