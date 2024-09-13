@@ -3,7 +3,7 @@
 
 from flask_babel import Babel, gettext
 from flask import Flask, render_template, request, g
-from typing import Dict, Optional
+from typing import Dict, Union
 
 
 class Config:
@@ -40,7 +40,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(supported_lang)
 
 
-def get_user() -> Optional[Dict]:
+def get_user() -> Union[Dict]:
     """
         If the variable login_as is set
         and found in users, this function return
