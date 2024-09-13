@@ -40,7 +40,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(supported_lang)
 
 
-def get_user() -> Union[Dict]:
+def get_user() -> Union[Dict: None]:
     """
         If the variable login_as is set
         and found in users, this function return
