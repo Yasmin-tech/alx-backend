@@ -3,6 +3,7 @@
 
 from flask_babel import Babel, gettext
 from flask import Flask, render_template, request, g
+from typing import Dict, Union, Optional
 
 
 class Config:
@@ -38,7 +39,7 @@ def get_locale() -> str:
     return request.accept_languages.best_match(supported_lang)
 
 
-def get_user():
+def get_user() -> Optional[Dict]:
     """
         If the variable login_as is set
         and found in users, this function return
@@ -51,7 +52,7 @@ def get_user():
 
 
 @app.before_request
-def before_request():
+def before_request() -> None:
     """
         This function runs before everything to check if the
         user is logged in
