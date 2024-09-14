@@ -70,7 +70,7 @@ def get_index() -> str:
     message = None
     if g.user:
         message = gettext("logged_in_as") % {'username': g.user['name']}
-    return render_template("5-index.html", message=message)
+    return render_template("6-index.html", message=message)
 
 
 if __name__ == "__main__":
