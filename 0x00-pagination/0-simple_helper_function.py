@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 ''' This script contains a simple helper function that return a tuble of
     of the indexes of the start and end of return in a list for a
-    particular pagination parameters
+    particular pagination parameters.
     '''
 
 
