@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-''' a class BasicCache that inherits from BaseCaching and is a caching system.
+''' a class BasicCache that inherits from BaseCaching and is a caching system
     '''
 
 
