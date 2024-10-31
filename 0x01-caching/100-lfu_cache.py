@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Least Frequently Used caching module.
+"""Least Frequently Used caching module
 """
 from collections import OrderedDict
 
