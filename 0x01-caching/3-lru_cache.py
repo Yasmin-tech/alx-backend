@@ -19,6 +19,7 @@ def shift_left(start_index: int, item_dict: Dict[int, str]) -> None:
     while count < last_index:
         item_dict[count] = item_dict[count + 1]
         count += 1
+    return count
 
 
 class LRUCache(BaseCaching):
@@ -44,8 +45,8 @@ class LRUCache(BaseCaching):
                     if v == key:
                         start_index = k
                         break
-                shift_left(start_index, self.least_used_items)
-                self.least_used_items[self.MAX_ITEMS - 1] = key
+                idx = shift_left(start_index, self.least_used_items)
+                self.least_used_items[idx] = key
             else:
                 if len(self.cache_data) >= self.MAX_ITEMS:
                     # Remove the least recently used item
@@ -67,7 +68,7 @@ class LRUCache(BaseCaching):
                 if v == key:
                     start_index = k
                     break
-            shift_left(start_index, self.least_used_items)
-            self.least_used_items[self.MAX_ITEMS - 1] = key
+            idx = shift_left(start_index, self.least_used_items)
+            self.least_used_items[idx] = key
             return self.cache_data[key]
         return None
