@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-    Python Flask app
+    Python Flask app.
     """
 
 
