@@ -24,6 +24,8 @@ const displaySchoolValue = (schoolName) => {
   });
 };
 
+// Node Redis client with async operations
+
 async function main() {
   displaySchoolValue('Holberton');
   setNewSchool('HolbertonSanFrancisco', '100');
